@@ -47,7 +47,7 @@ function nextBoard() {
         ball.dy *= -1;
     }
     if (ball.x <= 10 && ball.dx < 0 || ball.x >= 390 && ball.dx > 0) {
-        // beep();
+        beep();
         ball.dx *= -1;
         ball.dx *= 0.8;
     }
