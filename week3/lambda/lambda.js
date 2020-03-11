@@ -1,6 +1,21 @@
+const id = x => x;
 
+const fst = x => y => x;
+const snd = x => y => y;
 
+const M = f => f(f);
 
+const T = first => second => first;
+const F = first => second => second;
+
+const and = first => second => first(second)(first);
+const or = M;
+
+const Pair = first => second => selector => slector(first)(second)
+const firstname = fst;
+const lastname = snd;
+
+const konst = fst;
 // ----- special -----
 
 const Tuple = n => [
